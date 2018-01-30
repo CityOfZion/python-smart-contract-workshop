@@ -33,12 +33,12 @@
     * Deploy to privnet, invoke methods
 
 * **Smart contract internals 3**
-    * checkwitness
+    * CheckWitness
     * TriggerType.Verification and TriggerType.Application
     * timestamps + random numbers
         * timestamps/block time: boa/src/tests/blockchain // from boa.blockchain.vm.Neo.Header import GetTimestamp
         * random numbers: docs from ambethia on first dapp comp project ([reference](https://medium.com/proof-of-working/coz-first-dapps-competition-dapp-review-3a6b284afaef#414c))
-    * how to deal with bytearrays, int and string and so on, and that it really is only bytes
+    * NEP-5(.1) standard
 
 * **Hands-On 4**
     * NEX ICO template

@@ -1,5 +1,6 @@
 """
-Example which allows calls from the owner, or from users if at least 1 GAS is attached
+Example which allows calls from the owner, or from users if at least 1 GAS is attached.
+TODO: Verification portion not yet working.
 
 Verification only happens on the blockchain with deployed contracts.
 The `build` command only does the Appication portion.
