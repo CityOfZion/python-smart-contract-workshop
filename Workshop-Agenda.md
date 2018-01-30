@@ -38,7 +38,7 @@
     * timestamps + random numbers
         * timestamps/block time: boa/src/tests/blockchain // from boa.blockchain.vm.Neo.Header import GetTimestamp
         * random numbers: docs from ambethia on first dapp comp project ([reference](https://medium.com/proof-of-working/coz-first-dapps-competition-dapp-review-3a6b284afaef#414c))
-    * NEP-5(.1) standard
+    * [NEP-5 token standard](https://github.com/neo-project/proposals/blob/master/nep-5.mediawiki)
 
 * **Hands-On 4**
-    * NEX ICO template
+    * [NEX ICO template](https://github.com/neonexchange/neo-ico-template)
