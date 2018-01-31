@@ -27,13 +27,13 @@
     * Storage
         * you can only store a bytearray, int, and strings in storage.
         * if you want to store more complex objects i'd take a look at the serialization example ([[1]](https://github.com/CityOfZion/neo-boa/blob/master/boa/tests/src/SerializationTest.py), [[2]](https://github.com/CityOfZion/neo-boa/blob/master/boa/tests/src/SerializationTest2.py))
+    * CheckWitness
 
 * **Hands On 3**
     * Domain registration system
     * Deploy to privnet, invoke methods
 
 * **Smart contract internals 3**
-    * CheckWitness
     * TriggerType.Verification and TriggerType.Application
     * timestamps + random numbers
         * timestamps/block time: boa/src/tests/blockchain // from boa.blockchain.vm.Neo.Header import GetTimestamp

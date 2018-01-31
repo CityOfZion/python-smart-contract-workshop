@@ -32,6 +32,7 @@
 * Storage helper: [nex-ico-template/nex/common/storage.py](https://github.com/neonexchange/neo-ico-template/blob/master/nex/common/storage.py)
 * Get info about attached NEO or GAS: [nex-ico-template/nex/common/tx_io.py](https://github.com/neonexchange/neo-ico-template/blob/master/nex/common/txio.py)
 * https://github.com/CityOfZion/neo-boa/blob/master/boa/tests/src/OpCallTest.py
+* https://github.com/neo-project/neo/wiki/Network-Protocol
 
 
 #### Timestamps
