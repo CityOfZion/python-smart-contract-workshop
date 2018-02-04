@@ -19,46 +19,40 @@ neo> testinvoke 5030694901a527908ab0a1494670109e7b85e3e4 delete ["test.com"]
 neo> testinvoke 5030694901a527908ab0a1494670109e7b85e3e4 transfer ["test.com","AZ9Bmz6qmboZ4ry1z8p2KF3ftyA2ckJAym"]
 """
 from boa.blockchain.vm.Neo.Runtime import Log, Notify
-from boa.blockchain.vm.Neo.Runtime import GetTrigger, CheckWitness
-from boa.blockchain.vm.Neo.TriggerType import Application, Verification
+from boa.blockchain.vm.Neo.Runtime import CheckWitness
 from boa.blockchain.vm.Neo.Storage import GetContext, Get, Put, Delete
 from boa.code.builtins import concat
 
 
 def Main(operation, args):
-    trigger = GetTrigger()
-    if trigger == Verification():
-        pass
+    nargs = len(args)
+    if nargs == 0:
+        print("No domain name supplied")
+        return 0
 
-    elif trigger == Application():
-        nargs = len(args)
-        if nargs == 0:
-            print("No domain name supplied")
+    if operation == 'query':
+        domain_name = args[0]
+        return QueryDomain(domain_name)
+
+    elif operation == 'delete':
+        domain_name = args[0]
+        return DeleteDomain(domain_name)
+
+    elif operation == 'register':
+        if nargs < 2:
+            print("required arguments: [domain_name] [owner]")
             return 0
+        domain_name = args[0]
+        owner = args[1]
+        return RegisterDomain(domain_name, owner)
 
-        if operation == 'query':
-            domain_name = args[0]
-            return QueryDomain(domain_name)
-
-        elif operation == 'delete':
-            domain_name = args[0]
-            return DeleteDomain(domain_name)
-
-        elif operation == 'register':
-            if nargs < 2:
-                print("required arguments: [domain_name] [owner]")
-                return 0
-            domain_name = args[0]
-            owner = args[1]
-            return RegisterDomain(domain_name, owner)
-
-        elif operation == 'transfer':
-            if nargs < 2:
-                print("required arguments: [domain_name] [to_address]")
-                return 0
-            domain_name = args[0]
-            to_address = args[1]
-            return TransferDomain(domain_name, to_address)
+    elif operation == 'transfer':
+        if nargs < 2:
+            print("required arguments: [domain_name] [to_address]")
+            return 0
+        domain_name = args[0]
+        to_address = args[1]
+        return TransferDomain(domain_name, to_address)
 
 
 def QueryDomain(domain_name):

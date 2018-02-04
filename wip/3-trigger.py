@@ -1,6 +1,14 @@
 """
-Example which allows calls from the owner, or from users if at least 1 GAS is attached.
-TODO: Verification portion not yet working.
+Example which allows calls from the owner, or from users if at
+least 1 GAS is attached. THIS IS WORK IN PROGRESS AND NOT WORKING.
+
+The Verification trigger is basically only called when using the
+mintToken method in neo-python, so the only really good example
+is a NEP-5 ICO smart contract such as the NEX template.
+
+To do an invoke with verification and token, first you'll have
+to import the token to the wallet import token {hash} then you
+can do wallet tkn_mint {SYMBOL} {ADDR_TO} --attach-neo=X (i think)
 
 Verification only happens on the blockchain with deployed contracts.
 The `build` command only does the Appication portion.
