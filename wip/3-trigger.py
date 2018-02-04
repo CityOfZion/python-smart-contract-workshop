@@ -7,8 +7,10 @@ mintToken method in neo-python, so the only really good example
 is a NEP-5 ICO smart contract such as the NEX template.
 
 To do an invoke with verification and token, first you'll have
-to import the token to the wallet import token {hash} then you
-can do wallet tkn_mint {SYMBOL} {ADDR_TO} --attach-neo=X (i think)
+to import the token to the wallet and then use `tkn_mint`:
+
+    import token {contract_hash}
+    wallet tkn_mint {token_symbol} {ADDR} --attach-neo=X
 
 Verification only happens on the blockchain with deployed contracts.
 The `build` command only does the Appication portion.
