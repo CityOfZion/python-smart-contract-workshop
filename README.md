@@ -2,6 +2,7 @@
 
 * [Slides](https://goo.gl/3zve4E)
 * [Links, Infos and Resources](https://goo.gl/SRw1nd)
+* [Workshop Agenda](https://github.com/CityOfZion/python-smart-contract-workshop/blob/master/Workshop-Agenda.md)
 
 ## Typical method signatures
 
