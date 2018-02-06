@@ -1,14 +1,14 @@
 """
 Testing:
 
-neo> build sc/2-domain.py test 0710 05 True False query ["test.com"]
-neo> build sc/2-domain.py test 0710 05 True False register ["test.com","AK2nJJpJr6o664CWJKi1QRXjqeic2zRp8y"]
-neo> build sc/2-domain.py test 0710 05 True False delete ["test.com"]
-neo> build sc/2-domain.py test 0710 05 True False transfer ["test.com","AK2nJJpJr6o664CWJKi1QRXjqeic"]
+neo> build sc/3-domain.py test 0710 05 True False query ["test.com"]
+neo> build sc/3-domain.py test 0710 05 True False register ["test.com","AK2nJJpJr6o664CWJKi1QRXjqeic2zRp8y"]
+neo> build sc/3-domain.py test 0710 05 True False delete ["test.com"]
+neo> build sc/3-domain.py test 0710 05 True False transfer ["test.com","AK2nJJpJr6o664CWJKi1QRXjqeic"]
 
 Importing:
 
-neo> import contract sc/2-domain.avm 0710 05 True False
+neo> import contract sc/3-domain.avm 0710 05 True False
 neo> contract search ...
 
 Using:

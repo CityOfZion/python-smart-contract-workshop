@@ -1,14 +1,33 @@
 ## Links
 
 * [Slides](https://goo.gl/3zve4E)
-* [Links, Infos and Resources](https://goo.gl/SRw1nd)
+* [Links, Infos and Resources](https://goo.gl/SRw1nd) <-- this document has a lot of information and links, be sure to take a look!
 * [Workshop Agenda](https://github.com/CityOfZion/python-smart-contract-workshop/blob/master/Workshop-Agenda.md)
+
+If you have any issues or ideas for improvements, please leave your feedback on the [GitHub repository](https://github.com/CityOfZion/python-smart-contract-workshop) and on the [NEO Discord](https://discord.gg/R8v48YA).
+
+
+## Steps
+
+1. Setup [neo-python](https://github.com/CityOfZion/neo-python) and [neo-privatenet-docker](https://hub.docker.com/r/metachris/neo-privnet-with-gas/)
+2. First smart contract using `print`, `Runtime.Log` and `Runtime.Notify`, using neo-python's `build` command with the `test` argument.
+3. Basic smart contract using storage.
+4. A domain registration smart contract, where users can query, register, transfer and delete domains (important concept: checking of ownership).
+
+
+## Recommended Setup
+
+Linux or Mac is recommended, and you need Python 3.5 at the moment. If you are using Windows, either setup a VM or use the Linux Subsystem (see also [here](https://docs.google.com/document/d/1hALKjz76U2asbKdrJfUtYF6WN5gKBVSPRGI064UaftI/edit) for more infos).
+
+Clone neo-python and setup everything as described in the README. Then create a symlink of this workshop folder to `neo-python/sc`, which makes it easier to import, build and execute the smart contracts in this workshop.
+
 
 ## Typical method signatures
 
     def Main():
     def Main(operation):
     def Main(operation, args):
+
 
 ## Often used imports
 
@@ -20,11 +39,12 @@
 
     from boa.code.builtins import concat
 
+
 ## Often used `build` commands
 
     neo> build sc/1-print.py test 07 05 True False main
-    neo> build sc/2-domain.py test 0710 05 True False query ["test.com"]
-    neo> build sc/3-trigger.py test 0710 05 True False main []
+    neo> build sc/2-storage.py test 07 05 True False main
+    neo> build sc/3-domain.py test 0710 05 True False query ["test.com"]
 
 
 ## Useful code snippets
