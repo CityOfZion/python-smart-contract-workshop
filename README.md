@@ -7,12 +7,19 @@
 If you have any issues or ideas for improvements, please leave your feedback on the [GitHub repository](https://github.com/CityOfZion/python-smart-contract-workshop) and on the [NEO Discord](https://discord.gg/R8v48YA).
 
 
-## Steps
+## Steps in the workshop
 
 1. Setup [neo-python](https://github.com/CityOfZion/neo-python) and [neo-privatenet-docker](https://hub.docker.com/r/metachris/neo-privnet-with-gas/)
-2. First smart contract using `print`, `Runtime.Log` and `Runtime.Notify`, using neo-python's `build` command with the `test` argument.
-3. Basic smart contract using storage.
-4. A domain registration smart contract, where users can query, register, transfer and delete domains (important concept: checking of ownership).
+2. First smart contract using `print`, `Runtime.Log` and `Runtime.Notify`: [1-print.py](https://github.com/CityOfZion/python-smart-contract-workshop/blob/master/1-print.py) 
+   * Learn using neo-python's `build` command with the `test` argument
+   * Test differences between Log and Notify
+3. Basic smart contract using storage: [2-storage.py](https://github.com/CityOfZion/python-smart-contract-workshop/blob/master/2-storage.py)
+   * Storage is one of the key components of most smart contracts
+   * Everything is handled as bytes
+4. A domain registration smart contract: [3-domain.py](https://github.com/CityOfZion/python-smart-contract-workshop/blob/master/3-domain.py)
+   * users can query, register, transfer and delete domains
+   * important concept: checking of ownership
+5. NEX ICO template: https://github.com/neonexchange/neo-ico-template
 
 
 ## Recommended Setup
@@ -24,19 +31,23 @@ Clone neo-python and setup everything as described in the README. Then create a 
 
 ## Typical method signatures
 
+    # These two are just examples for playing around and experimenting:
     def Main():
     def Main(operation):
+    
+    # This is how most real smart contracts look like:
     def Main(operation, args):
 
+See also: [parameter & return value types](https://github.com/neo-project/docs/blob/master/en-us/sc/tutorial/Parameter.md)
 
 ## Often used imports
 
     from boa.blockchain.vm.Neo.Runtime import Log, Notify
     from boa.blockchain.vm.Neo.Runtime import GetTrigger, CheckWitness
-
+    
     from boa.blockchain.vm.Neo.TriggerType import Application, Verification
     from boa.blockchain.vm.Neo.Storage import GetContext, Get, Put, Delete
-
+    
     from boa.code.builtins import concat
 
 
