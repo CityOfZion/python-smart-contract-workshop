@@ -10,15 +10,13 @@ def Main():
     context = GetContext()
     Notify(context)
 
+    # Store a value, read it out, and add a number to it:
     item_key = 'hello'
     item_val = 123
-    Notify(item_val)
-
-    # Save the value to storage
     Put(context, item_key, item_val)
 
-    # Read the key again
     out = Get(context, item_key)
     out = out + 10
     Notify(out)
+
     return out

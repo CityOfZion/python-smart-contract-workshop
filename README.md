@@ -10,7 +10,7 @@ If you have any issues or ideas for improvements, please leave your feedback on 
 ## Steps in the workshop
 
 1. Setup [neo-python](https://github.com/CityOfZion/neo-python) and [neo-privatenet-docker](https://hub.docker.com/r/metachris/neo-privnet-with-gas/)
-2. First smart contract using `print`, `Runtime.Log` and `Runtime.Notify`: [1-print.py](https://github.com/CityOfZion/python-smart-contract-workshop/blob/master/1-print.py) 
+2. First smart contract using `print`, `Runtime.Log` and `Runtime.Notify`: [1-print.py](https://github.com/CityOfZion/python-smart-contract-workshop/blob/master/1-print.py)
    * Learn using neo-python's `build` command with the `test` argument
    * Test differences between Log and Notify
 3. Basic smart contract using storage: [2-storage.py](https://github.com/CityOfZion/python-smart-contract-workshop/blob/master/2-storage.py)
@@ -24,7 +24,7 @@ If you have any issues or ideas for improvements, please leave your feedback on 
 
 ## Recommended Setup
 
-Linux or Mac is recommended, and you need Python 3.5 at the moment. If you are using Windows, either setup a VM or use the Linux Subsystem (see also [here](https://docs.google.com/document/d/1hALKjz76U2asbKdrJfUtYF6WN5gKBVSPRGI064UaftI/edit) for more infos).
+Linux or Mac is recommended, and you need Python 3.5 at the moment. If you are using Windows, either setup a VM or use the Linux Subsystem (see also [here](https://medium.com/@gubanotorious/installing-and-running-neo-python-on-windows-10-284fb518b213) for more infos).
 
 Clone neo-python and setup everything as described in the README. Then create a symlink of this workshop folder to `neo-python/sc`, which makes it easier to import, build and execute the smart contracts in this workshop.
 
@@ -34,7 +34,7 @@ Clone neo-python and setup everything as described in the README. Then create a 
     # These two are just examples for playing around and experimenting:
     def Main():
     def Main(operation):
-    
+
     # This is how most real smart contracts look like:
     def Main(operation, args):
 
@@ -44,10 +44,10 @@ See also: [parameter & return value types](https://github.com/neo-project/docs/b
 
     from boa.blockchain.vm.Neo.Runtime import Log, Notify
     from boa.blockchain.vm.Neo.Runtime import GetTrigger, CheckWitness
-    
+
     from boa.blockchain.vm.Neo.TriggerType import Application, Verification
     from boa.blockchain.vm.Neo.Storage import GetContext, Get, Put, Delete
-    
+
     from boa.code.builtins import concat
 
 

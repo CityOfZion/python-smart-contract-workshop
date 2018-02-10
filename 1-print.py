@@ -6,6 +6,8 @@ Invoke:       neo> testinvoke <hash> main
 from boa.blockchain.vm.Neo.Runtime import Log, Notify
 
 def Main():
+    # Print translates to a `Log` call, and is best used with simple strings for
+    # development info. To print variables such as lists and objects, use `Notify`.
     print("log via print (1)")
     Log("normal log (2)")
     Notify("notify (3)")
