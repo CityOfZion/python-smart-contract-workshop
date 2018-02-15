@@ -16,27 +16,26 @@ from boa.blockchain.vm.Neo.Storage import Get, Put, Delete, GetContext
 
 def Main():
     context = GetContext()
-    Notify(context)
 
-    # This is the storage key
+    # This is the storage key we use in this example
     item_key = 'test-storage-key'
 
     # Try to get a value for this key from storage
     item_value = Get(context, item_key)
-    Notify("Value read from storage:")
-    Notify(item_value)
+    msg = ["Value read from storage:", item_value]
+    Notify(msg)
 
     if len(item_value) == 0:
-        print("Storage key not yet set. Setting to 0")
+        Notify("Storage key not yet set. Setting to 0")
         item_value = 0
 
     else:
-        print("Storage key already set. Incrementing by 1")
+        Notify("Storage key already set. Incrementing by 1")
         item_value += 1
 
     # Store the new value
     Put(context, item_key, item_value)
-    Notify("New value written into storage:")
-    Notify(item_value)
+    msg = ["New value written into storage:", item_value]
+    Notify(msg)
 
     return item_value
