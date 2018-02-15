@@ -16,6 +16,7 @@ If you have any issues or ideas for improvements, please leave your feedback on 
 3. Basic smart contract using storage: [2-storage.py](https://github.com/CityOfZion/python-smart-contract-workshop/blob/master/2-storage.py)
    * Storage is one of the key components of most smart contracts
    * Everything is handled as bytes
+   * Learn about `debugstorage on/off/reset`
 4. A domain registration smart contract: [3-domain.py](https://github.com/CityOfZion/python-smart-contract-workshop/blob/master/3-domain.py)
    * users can query, register, transfer and delete domains
    * important concept: checking of ownership
