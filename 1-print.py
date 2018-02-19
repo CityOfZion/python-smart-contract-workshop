@@ -1,4 +1,6 @@
 """
+In prompt.py, you perhaps need to execute `config sc-events on` to see the events.
+
 Test & Build: neo> build sc/1-print.py test 07 05 True False main
 Import:       neo> import contract sc/1-print.avm 07 05 True False
 Invoke:       neo> testinvoke <hash> main

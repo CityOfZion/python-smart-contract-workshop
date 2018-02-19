@@ -22,12 +22,15 @@ If you have any issues or ideas for improvements, please leave your feedback on 
    * important concept: checking of ownership
 5. NEX ICO template: https://github.com/neonexchange/neo-ico-template
 
+Note: You probably need to execute `config sc-events on` inside neo-python's `prompt.py` to see any kind of notifications of the examples.
 
 ## Recommended Setup
 
 Linux or Mac is recommended, and you need Python 3.5 at the moment. If you are using Windows, either setup a VM or use the Linux Subsystem (see also [here](https://medium.com/@gubanotorious/installing-and-running-neo-python-on-windows-10-284fb518b213) for more infos).
 
 Clone neo-python and setup everything as described in the README. Then create a symlink of this workshop folder to `neo-python/sc`, which makes it easier to import, build and execute the smart contracts in this workshop.
+
+Always work with a private network with this Docker image: https://hub.docker.com/r/metachris/neo-privnet-with-gas/
 
 
 ## Typical method signatures
