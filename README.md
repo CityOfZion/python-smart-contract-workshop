@@ -9,7 +9,7 @@ If you have any issues or ideas for improvements, please leave your feedback on 
 
 ## Steps in the workshop
 
-1. Setup [neo-python](https://github.com/CityOfZion/neo-python) and [neo-privatenet-docker](https://hub.docker.com/r/metachris/neo-privnet-with-gas/)
+1. Setup [neo-python](https://github.com/CityOfZion/neo-python) and [neo-privatenet-docker](https://hub.docker.com/r/cityofzion/neo-privatenet)
 2. First smart contract using `print`, `Runtime.Log` and `Runtime.Notify`: [1-print.py](https://github.com/CityOfZion/python-smart-contract-workshop/blob/master/1-print.py)
    * Learn using neo-python's `build` command with the `test` argument
    * Test differences between Log and Notify
@@ -30,7 +30,7 @@ Linux or Mac is recommended, and you need Python 3.5 at the moment. If you are u
 
 Clone neo-python and setup everything as described in the README. Then create a symlink of this workshop folder to `neo-python/sc`, which makes it easier to import, build and execute the smart contracts in this workshop.
 
-Always work with a private network with this Docker image: https://hub.docker.com/r/metachris/neo-privnet-with-gas/
+Always work with a private network with this Docker image: https://hub.docker.com/r/cityofzion/neo-privatenet
 
 
 ## Typical method signatures

@@ -1,5 +1,5 @@
 """
-In prompt.py, you perhaps need to execute `config sc-events on` to see the events.
+In prompt.py, you need to execute `config sc-events on` to see the events showing up.
 
 Test & Build: neo> build sc/1-print.py test 07 05 True False main
 Import:       neo> import contract sc/1-print.avm 07 05 True False
