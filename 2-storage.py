@@ -26,8 +26,8 @@ def Main():
     Notify(msg)
 
     if len(item_value) == 0:
-        Notify("Storage key not yet set. Setting to 0")
-        item_value = 0
+        Notify("Storage key not yet set. Setting to 1")
+        item_value = 1
 
     else:
         Notify("Storage key already set. Incrementing by 1")
