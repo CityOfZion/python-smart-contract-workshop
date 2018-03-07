@@ -3,7 +3,7 @@
     * Development tools: neo-boa & neo-python
 
 * **Hands-On 1**
-    * Check that Python 3.5.2 is installed
+    * Check that Python 3.6+ is installed
     * Clone and setup neo-python and neo-boa
     * Pull the privnet Docker image
     * Run Docker privnet and connect neo-python to it
