@@ -7,12 +7,11 @@ Debugstorage is enabled by default, you can disable it with
 `debugstorage off` and, more importantly, reset it with
 `debugstorage reset`.
 
-Test & Build: neo> build sc/2-storage.py test 07 05 True False main
-Import:       neo> import contract sc/2-storage.avm 07 05 True False
-Invoke:       neo> testinvoke <hash> main
+Test & Build:
+neo> build sc/3-storage.py test 07 05 True False
 """
-from boa.blockchain.vm.Neo.Runtime import Log, Notify
-from boa.blockchain.vm.Neo.Storage import Get, Put, Delete, GetContext
+from boa.interop.Neo.Runtime import Log, Notify
+from boa.interop.Neo.Storage import Get, Put, GetContext
 
 def Main():
     context = GetContext()
