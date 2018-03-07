@@ -1,14 +1,14 @@
 """
 Testing:
 
-neo> build sc/3-domain.py test 0710 05 True False query ["test.com"]
-neo> build sc/3-domain.py test 0710 05 True False register ["test.com","AK2nJJpJr6o664CWJKi1QRXjqeic2zRp8y"]
-neo> build sc/3-domain.py test 0710 05 True False delete ["test.com"]
-neo> build sc/3-domain.py test 0710 05 True False transfer ["test.com","AK2nJJpJr6o664CWJKi1QRXjqeic"]
+neo> build sc/4-domain.py test 0710 05 True False query ["test.com"]
+neo> build sc/4-domain.py test 0710 05 True False register ["test.com","AK2nJJpJr6o664CWJKi1QRXjqeic2zRp8y"]
+neo> build sc/4-domain.py test 0710 05 True False delete ["test.com"]
+neo> build sc/4-domain.py test 0710 05 True False transfer ["test.com","AK2nJJpJr6o664CWJKi1QRXjqeic"]
 
 Importing:
 
-neo> import contract sc/3-domain.avm 0710 05 True False
+neo> import contract sc/4-domain.avm 0710 05 True False
 neo> contract search ...
 
 Using:
@@ -18,10 +18,10 @@ neo> testinvoke 5030694901a527908ab0a1494670109e7b85e3e4 register ["test.com","A
 neo> testinvoke 5030694901a527908ab0a1494670109e7b85e3e4 delete ["test.com"]
 neo> testinvoke 5030694901a527908ab0a1494670109e7b85e3e4 transfer ["test.com","AZ9Bmz6qmboZ4ry1z8p2KF3ftyA2ckJAym"]
 """
-from boa.blockchain.vm.Neo.Runtime import Log, Notify
-from boa.blockchain.vm.Neo.Runtime import CheckWitness
-from boa.blockchain.vm.Neo.Storage import GetContext, Get, Put, Delete
-from boa.code.builtins import concat
+from boa.interop.Neo.Runtime import Log, Notify
+from boa.interop.Neo.Storage import Get, Put, GetContext
+from boa.interop.Neo.Runtime import GetTrigger,CheckWitness
+from boa.builtins import concat
 
 
 def Main(operation, args):
