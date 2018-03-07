@@ -11,11 +11,11 @@ If you have any issues or ideas for improvements, please leave your feedback on 
 
 ## Steps in the workshop
 
-1. Setup [neo-python](https://github.com/CityOfZion/neo-python) and a [neo-privatenet] Docker container [optionally with neoscan](https://hub.docker.com/r/cityofzion/neo-privatenet)
+1. Setup [neo-python](https://github.com/CityOfZion/neo-python) and a [neo-privatenet](https://hub.docker.com/r/cityofzion/neo-privatenet/) Docker container [optionally with neoscan](https://hub.docker.com/r/cityofzion/neo-privatenet)
 2. First smart contract, just printing "Hello World": [1-print.py](https://github.com/CityOfZion/python-smart-contract-workshop/blob/master/1-print.py)
    * Learn using neo-python's `build` command with the `test` argument
    * Test differences between Log and Notify
-2. First smart contract using `print`, `Runtime.Log` and `Runtime.Notify`: [2-print-and-notify.py](https://github.com/CityOfZion/python-smart-contract-workshop/blob/master/1-print.py)
+2. First smart contract using `print`, `Runtime.Log` and `Runtime.Notify`: [2-print-and-notify.py](https://github.com/CityOfZion/python-smart-contract-workshop/blob/master/2-print-and-notify.py)
    * Learn using neo-python's `build` command with the `test` argument
    * Test differences between Log and Notify
 3. Basic smart contract using storage: [3-storage.py](https://github.com/CityOfZion/python-smart-contract-workshop/blob/master/3-storage.py)
