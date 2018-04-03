@@ -22,10 +22,11 @@ If you have any issues or ideas for improvements, please leave your feedback on 
    * Storage is one of the key components of most smart contracts
    * Everything is handled as bytes
    * Learn about `debugstorage on/off/reset`
-4. A domain registration smart contract: [4-domain.py](https://github.com/CityOfZion/python-smart-contract-workshop/blob/master/4-domain.py)
+4. Check out [Dictionary support](https://github.com/CityOfZion/neo-boa/blob/master/boa_test/example/DictTest2.py) and [`neo.Runtime.Serialize`](https://github.com/CityOfZion/neo-boa/blob/master/boa_test/example/demo/SerializationTest.py)
+5. A domain registration smart contract: [4-domain.py](https://github.com/CityOfZion/python-smart-contract-workshop/blob/master/4-domain.py)
    * users can query, register, transfer and delete domains
    * important concept: checking of ownership
-5. NEX ICO template: https://github.com/neonexchange/neo-ico-template
+6. NEX ICO template: https://github.com/neonexchange/neo-ico-template
 
 **Note**: Inside neo-python's `prompt.py` you need to run `config sc-events on` to see any kind of notifications of the examples!
 
