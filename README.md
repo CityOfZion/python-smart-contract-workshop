@@ -46,30 +46,32 @@ You can also easily run the private network with neoscan - just use
 See [here](https://github.com/slipo/neo-scan-docker) for more information.
 
 ## Typical method signatures
-
+```python
     # These two are just examples for playing around and experimenting:
     def Main():
     def Main(operation):
 
     # This is how most real smart contracts look like:
     def Main(operation, args):
+```
 
 See also: [parameter & return value types](https://github.com/neo-project/docs/blob/master/en-us/sc/tutorial/Parameter.md)
 
 ## Often used imports
-
+```python
     from boa.interop.Neo.Runtime import Log, Notify
     from boa.interop.Neo.Storage import Get, Put, GetContext
     from boa.interop.Neo.Runtime import GetTrigger,CheckWitness
     from boa.builtins import concat, list, range, take, substr
-
+```
 
 ## Often used `build` commands
-
+```python
     neo> build sc/1-print.py test 07 05 True False
     neo> build sc/2-print-and-notify.py test 07 05 True False
     neo> build sc/3-storage.py test 07 05 True False
     neo> build sc/4-domain.py test 0710 05 True False query ["test.com"]
+```
 
 
 ## Useful code snippets
@@ -82,11 +84,12 @@ See also: [parameter & return value types](https://github.com/neo-project/docs/b
 #### Timestamps
 
 You can get the last block timestamp from the blockchain with this code.
-
+```python
     def now():
         height = GetHeight()
         current_block = GetHeader(height)
         return current_block.Timestamp
+```
 
 Might not work with neo-boa 0.2.2, downgrade to 0.2.1 (see also https://github.com/CityOfZion/neo-boa/issues/35).
 
