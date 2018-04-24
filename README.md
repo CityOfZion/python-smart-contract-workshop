@@ -30,7 +30,7 @@ If you have any issues or ideas for improvements, please leave your feedback on 
 
 **Note**: Inside neo-python's `prompt.py` you need to run `config sc-events on` to see any kind of notifications of the examples!
 
-## Recommended Setup
+## Recommended System Setup
 
 Linux or Mac is recommended, and you need Python 3.6+. If you are using Windows, either setup a VM or use the Linux Subsystem (see also [here](https://medium.com/@gubanotorious/installing-and-running-neo-python-on-windows-10-284fb518b213) for more infos).
 
@@ -44,6 +44,26 @@ You can also easily run the private network with neoscan - just use
     $ docker-compose -f docker-compose-neoscan.yml up
 
 See [here](https://github.com/slipo/neo-scan-docker) for more information.
+
+
+## Quickstart
+
+    # Pull the Docker image
+    docker pull docker pull cityofzion/neo-privatenet
+
+    # Start a private network
+    docker run --rm -d --name neo-privatenet -p 20333-20336:20333-20336/tcp -p 30333-30336:30333-30336/tcp cityofzion/neo-privatenet
+    
+    # Create a Python 3.6 virtual environment and activate it
+    python3.6 -m venv venv
+    . venv/bin/activate
+    
+    # Install neo-python
+    pip install neo-python
+    
+    # Start neo-python connected to the private net (-p), showing sc events (-v)
+    np-prompt -p -v
+
 
 ## Typical method signatures
 ```python
