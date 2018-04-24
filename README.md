@@ -48,6 +48,7 @@ See [here](https://github.com/slipo/neo-scan-docker) for more information.
 
 ## Quickstart
 
+```shell
     # Pull the Docker image
     docker pull docker pull cityofzion/neo-privatenet
 
@@ -66,6 +67,7 @@ See [here](https://github.com/slipo/neo-scan-docker) for more information.
     
     # Start neo-python connected to the private net (-p), showing sc events (-v)
     np-prompt -p -v
+```
 
 
 ## Typical method signatures
