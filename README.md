@@ -66,7 +66,7 @@ See also: [parameter & return value types](https://github.com/neo-project/docs/b
 ```
 
 ## Often used `build` commands
-```python
+```shell
     neo> build sc/1-print.py test 07 05 True False
     neo> build sc/2-print-and-notify.py test 07 05 True False
     neo> build sc/3-storage.py test 07 05 True False
