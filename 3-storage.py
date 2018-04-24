@@ -8,7 +8,7 @@ Debugstorage is enabled by default, you can disable it with
 `debugstorage reset`.
 
 Test & Build:
-neo> build sc/3-storage.py test 07 05 True False
+neo> build 3-storage.py test 07 05 True False
 """
 from boa.interop.Neo.Runtime import Log, Notify
 from boa.interop.Neo.Storage import Get, Put, GetContext
