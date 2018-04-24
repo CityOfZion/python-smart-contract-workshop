@@ -61,6 +61,9 @@ See [here](https://github.com/slipo/neo-scan-docker) for more information.
     # Install neo-python
     pip install neo-python
     
+    # Remove any old private chain database
+    rm -rf ~/.neopython/Chains/privnet*
+    
     # Start neo-python connected to the private net (-p), showing sc events (-v)
     np-prompt -p -v
 
