@@ -3,7 +3,7 @@
 * [Slides](https://goo.gl/3zve4E)
 * [Links, Infos and Resources](https://goo.gl/SRw1nd) <-- this document has a lot of information and links, be sure to take a look!
 * [Video: Introduction to Smart Contracts with Python 3.6 on the NEO Platform](https://youtu.be/ZZXz261AXrM) (by Tom Saunders) -- must watch video, introduction into neo-python and neo-boa
-* [Workshop Agenda](https://github.com/CityOfZion/python-smart-contract-workshop/blob/master/Workshop-Agenda.md)
+* [neo-python documentation](http://neo-python.readthedocs.io/en/latest/index.html)
 * [Video of this workshop at DevCon 2018](https://www.youtube.com/watch?v=sk8tu1uqRDI)
 
 If you have any issues or ideas for improvements, please leave your feedback on the [GitHub repository](https://github.com/CityOfZion/python-smart-contract-workshop) and on the [NEO Discord](https://discord.gg/R8v48YA).
