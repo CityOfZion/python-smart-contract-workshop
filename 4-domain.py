@@ -1,10 +1,10 @@
 """
 Testing:
 
-neo> build 4-domain.py test 0710 05 True False query ["test.com"]
-neo> build 4-domain.py test 0710 05 True False register ["test.com","AK2nJJpJr6o664CWJKi1QRXjqeic2zRp8y"]
-neo> build 4-domain.py test 0710 05 True False delete ["test.com"]
-neo> build 4-domain.py test 0710 05 True False transfer ["test.com","AK2nJJpJr6o664CWJKi1QRXjqeic"]
+neo> sc build_run 4-domain.py True False False 0710 05 query ["test.com"]
+neo> sc build_run 4-domain.py True False False 0710 05 register ["test.com","AK2nJJpJr6o664CWJKi1QRXjqeic2zRp8y"]
+neo> sc build_run 4-domain.py True False False 0710 05 delete ["test.com"]
+neo> sc build_run 4-domain.py True False False 0710 05 transfer ["test.com","AK2nJJpJr6o664CWJKi1QRXjqeic"]
 
 Importing:
 

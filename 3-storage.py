@@ -4,11 +4,15 @@ This example shows how to write, read and manipulate value in storage.
 It is also a good example of using neo-python's `debugstorage`, which
 allows you to test `Put` operations with `build .. test` commands.
 Debugstorage is enabled by default, you can disable it with
-`debugstorage off` and, more importantly, reset it with
-`debugstorage reset`.
+`sc debugstorage off` and, more importantly, reset it with
+`sc debugstorage reset`.
 
 Test & Build:
-neo> build 3-storage.py test 07 05 True False
+neo> sc build_run 3-storage.py True False False 07 05
+
+Invoke this multiple times to see an increasing value in storage. Reset with:
+
+neo> sc debugstorage reset
 """
 from boa.interop.Neo.Runtime import Log, Notify
 from boa.interop.Neo.Storage import Get, Put, GetContext
