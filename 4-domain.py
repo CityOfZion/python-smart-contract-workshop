@@ -8,8 +8,8 @@ neo> sc build_run 4-domain.py True False False 0710 05 transfer ["test.com","AK2
 
 Importing:
 
-neo> import contract 4-domain.avm 0710 05 True False
-neo> contract search ...
+neo> sc deploy 4-domain.avm True False False 0710 05
+neo> search contract ...
 
 Using:
 
