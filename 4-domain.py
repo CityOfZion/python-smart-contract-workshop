@@ -1,5 +1,6 @@
 """
-WARNING - DO NOT DEPLOY, IS CURRENTLY REJECTED BY CONSENSUS NODES
+!NOTE! Current versions of neo-python/neo-boa does not calculate fees correctly,
+deploy with an extra network fee as contract is > 1024 bytes (--fee=0.1, see "Importing")
 
 Testing:
 
@@ -8,9 +9,10 @@ neo> sc build_run 4-domain.py True False False 0710 05 register ["test.com","AK2
 neo> sc build_run 4-domain.py True False False 0710 05 delete ["test.com"]
 neo> sc build_run 4-domain.py True False False 0710 05 transfer ["test.com","AK2nJJpJr6o664CWJKi1QRXjqeic"]
 
-Importing (DO NOT DO THIS NOW):
 
-neo> sc deploy 4-domain.avm True False False 0710 05
+Importing:
+
+neo> sc deploy 4-domain.avm True False False 0710 05 --fee=0.1
 neo> search contract ...
 
 Using:
