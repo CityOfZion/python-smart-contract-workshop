@@ -87,7 +87,7 @@ def Main(operation):
 def Main(operation, args):
 ```
 
-See also: [parameter & return value types](https://github.com/neo-project/docs/blob/master/en-us/sc/tutorial/Parameter.md)
+See also: [parameter & return value types](https://github.com/neo-project/docs/blob/master/en-us/sc/Parameter.md)
 
 ## Often used imports
 ```python
